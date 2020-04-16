@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--NAVBAR-->
+
+    <nav class="navigation-bar">
+        <img src="Images/menu.svg" class="img-fluid icon-menu" alt="icon">
+        <div class="box-navigation-bar">
+            <div class="btw items-nav">
+                <div class="nav-img-box">
+                    <img src="Images/solidarite.jpg" alt="">
+                </div>
+                <div>
+                    <ul class="btw items-navigation">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".modal-mdf">Proposer un hébergement</a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".modal-search">Chercher un hébergement</a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".modal-give">Faire un don</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+
+    <header>
+        <div class="box-text-header text-center">
+            <h1 class="text-header">LA SOLIDARITE S'ORGANISE PARTOUT <br> DANS LE MONDE </h1>
+            <button class="btn-1" data-toggle="modal" data-target=".modal-give">Faire un don</button>
+        </div>
+    </header>
+
+    <!--MAIN-->
+
+    <section class="section1 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
+                    <div class="box-text-section1">
+                        <h2 class="mb-3">A PROPOS</h2>
+                        <p>
+                            SOS UN TOIT est un service d'urgence de mise en relation de Français bloqués
+                            à l'étranger et de Français établis hors de France pouvant les accueillir temporairement.
+                            <br><br>
+                            Ce site vous permet de proposer: <br><br>
+                            - Un hébergement temporaire pour un Français bloqué dans 
+                            votre pays, en attente d'un retour vers la France.
+                            <br><br>
+                            - De vous déclarer à la recherche d'un hébergement le temps d'attendre votre retour en France.
+                            <br><br>
+                            - De faire un don
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
+                    <div class="box-img-section1">
+                        <img src="Images/solidarite.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                    <div class="card-s2 text-center">
+                        <img class="img-section2 mb-3" src="Images/covid.jpg" alt="">
+                        <h3 class="mb-3">Je propose un hébergement</h3>
+                        <p class="">
+                            Vous habitez hors de France et souhaitez proposer à des ressortissants Français de les héberger temporairement dans l'attente de leur retour en France
+                        </p>
+                        <button class="btn-2" data-toggle="modal" data-target=".modal-mdf">Inscrivez-vous ici</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                    <div class="card-s2 text-center">
+                        <img class="img-section2 mb-3" src="Images/covid.jpg" alt="">
+                        <h3 class="mb-3">Je cherche un hébergement</h3>
+                        <p>
+                            Vous habitez hors de France et souhaitez proposer à des ressortissants Français de les héberger temporairement dans l'attente de leur retour en France
+                        </p>
+                        <button class="btn-2" data-toggle="modal" data-target=".modal-search">Inscrivez-vous ici</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                    <div class="card-s2 text-center">
+                        <img class="img-section2 mb-3" src="Images/covid.jpg" alt="">
+                        <h3 class="mb-3">Je veux faire un don</h3>
+                        <p class="">
+                            Vous habitez hors de France et souhaitez proposer à des ressortissants Français de les héberger temporairement dans l'attente de leur retour en France
+                        </p>
+                        <button class="btn-2" data-toggle="modal" data-target=".modal-give">Inscrivez-vous ici</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FORM-->
+
+    <section class="box-form">
+        <div class="modal modal-mdf fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content modal-box-form">
+                    <div class="modal-head">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1>Offre d'hébergement</h1>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-form">
+                                <h3>Nom et prénoms</h3>
+                                <input type="text" placeholder="Nom et prénoms">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Adresse mail</h3>
+                                <input type="mail" placeholder="Votre mail">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Numéro de passeport</h3>
+                                <input type="text" placeholder="Numéro de passport">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Pays où vous proposez l'hébergement</h3>
+                                <select name="" id="">
+                                    <option value="">France</option>
+                                    <option value="">Belgique</option>
+                                </select>
+                            </div>
+                            <div class="mb-form">
+                                <h3>Ville ou région où se trouve l'hébergement</h3>
+                                <input type="text" placeholder="Ville ou région">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Nombre de personne que vous pouvez héberger</h3>
+                                <input type="text" placeholder="nombre de personne">
+                            </div>
+                            
+                            <div style="float: right;">
+                                <button class="btn-1" style="background-color: #596774; color: white;">Envoyer</button>
+                                <button class="btn-1" style="background-color: #ccc;">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-form">
+
+        <div class="modal modal-search fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content modal-box-form">
+                    <div class="modal-head">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1>Chercher un hébergement</h1>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-form">
+                                <h3>Nom et prénoms</h3>
+                                <input type="text" placeholder="Nom et prénoms">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Adresse mail</h3>
+                                <input type="mail" placeholder="Votre mail">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Numéro de passeport</h3>
+                                <input type="text" placeholder="Numéro de passport">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Pays où vous Chercher l'hébergement</h3>
+                                <select name="" id="">
+                                    <option value="">France</option>
+                                    <option value="">Belgique</option>
+                                </select>
+                            </div>
+                            <div class="mb-form">
+                                <h3>Ville ou région de recherche</h3>
+                                <input type="text" placeholder="Ville ou région">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Nombre de personnes pour lesquels vous cherchez un hébergement</h3>
+                                <input type="text" placeholder="nombre de personne">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Informations complémentaires liées à votre situation</h3>
+                                <textarea></textarea>
+                            </div>
+                            <div style="float: right;">
+                                <button class="btn-1" style="background-color: #596774; color: white;">Envoyer</button>
+                                <button class="btn-1" style="background-color: #ccc;">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-form">
+
+        <div class="modal modal-give fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content modal-box-form">
+                    <div class="modal-head">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1>Faire un don</h1>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-form">
+                                <h3>Nom et prénoms</h3>
+                                <input type="text" placeholder="Nom et prénoms">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Adresse mail</h3>
+                                <input type="mail" placeholder="Votre mail">
+                            </div>
+                            <div class="mb-form">
+                                <h3>Montant</h3>
+                                <input type="text" placeholder="Numéro de passport">
+                            </div>
+                            <div style="float: right;">
+                                <button class="btn-1" style="background-color: #596774; color: white;">Envoyer</button>
+                                <button class="btn-1" style="background-color: #ccc;">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer class="text-center">
+        <div>
+            <p>
+                Ce service d'entraide gratuit a pour objectif de mettre en contact des Français basés à l'étranger, pouvant héberger durant quelques jours des Français bloqués loin de chez eux en raison de la crise sanitaire, et en attente d'un retour vers la France.
+            </p>
+            <h5>Copyright-2020</h5>
+        </div>
+    </footer>
+
+    <script>
+        $('.icon-menu').click(function(){
+        $('.box-navigation-bar').slideToggle();
+        })
+    </script>
+
+</body>
+</html>

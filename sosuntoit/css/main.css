@@ -1,0 +1,304 @@
+/* Base */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background-color: #f6f6f6;
+}
+
+/*GENERAL*/
+
+ul, li{
+  margin: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a:hover, a:hover{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+.font-b{
+  font-weight: bold;
+}
+
+button:focus, input:focus, select:focus{
+  outline: none;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btw{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mb-3{
+  margin-bottom: 3rem!important;
+}
+
+.mb-5{
+  margin-bottom: 5rem!important;
+}
+
+/*Buttons*/
+
+.btn-1, .btn-2{
+  padding: .8rem 2rem;
+  border-radius: 2rem;
+  transition: all .3s;
+  background-color: #083e6c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-1:hover{
+  transition: all .3s;
+  color: #083e6c;
+  background-color: white;
+}
+
+.btn-2:hover{
+  transition: all .3s;
+  color: #083e6c;
+  background-color: #ccc;
+}
+
+/* navigation-bar */
+
+.navigation-bar{
+  /*box-shadow: 0 1px 3px #33280834;*/
+  padding: 1.5rem 2rem;
+  background-color: #083e6c;
+  color: white;
+}
+
+.items-nav{
+  align-items: center;
+}
+
+.navigation-bar ul li{
+  margin: 0 1.3rem;
+}
+
+.navigation-bar ul li a{
+  color: white;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.navigation-bar ul li a:hover{
+  color: #ccc;
+  transition: all .3s;
+}
+
+.nav-img-box img{
+  height: 4rem;
+  width: 5rem;
+}
+
+.icon-menu{
+  height: 4rem;
+  width: 4rem;
+  display: none;
+}
+
+/***Header***/
+
+header{
+  background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.527)), url('../Images/solidarite.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 60rem;
+  width: 100%;
+  position: relative;
+}
+
+.box-text-header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 100%;
+}
+
+.text-header{
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+/***MAIN***/
+
+.section1{
+  background: #f2f2f3;
+  min-height: 50rem;
+  padding: 7rem 1rem;
+}
+
+.box-text-section1{
+  padding: 0 3rem;
+}
+
+.box-text-section1 h2{
+  font-size: 3rem;
+  color: #083e6c;
+}
+
+.box-img-section1 img{
+  height: 40rem;
+  background-color: gray;
+}
+
+.img-section2{
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+}
+
+.card-s2{
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  padding: 2rem 1rem;
+}
+
+.card-s2 p{
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/***FOOTER***/
+
+footer{
+  min-height: 30rem;
+  padding: 3rem;
+  background-color: #083e6c;
+  color: white;
+}
+
+footer h5{
+  margin-top: 3rem;
+}
+
+footer p{
+  width: 40%;
+  margin: auto;
+  font-size: 1.4rem;
+}
+
+/**FORMULAIRE OFFRE***/
+
+.mb-form{
+  margin-bottom: 2rem!important;
+}
+
+.box-form{
+  display: flex;
+  justify-content: center;
+}
+
+/*.box-form form{
+  width: 40%;
+}*/
+
+.modal-box-form{
+  padding: 1rem;
+}
+
+.modal-head, .modal-body{
+  padding: 1rem;
+}
+
+.modal-head .close{
+  font-size: 2.5rem;
+}
+
+.box-form input, .box-form select, .box-form textarea{
+  width: 100%;
+  height: 4rem;
+  border-radius: .3rem;
+  border: 1px solid #ccc;
+  padding: .8rem;
+}
+
+.box-form textarea{
+  height: 10rem;
+  resize: none;
+}
+
+.box-form h1{
+  color: #083e6c;
+}
+
+.box-form h3{
+  margin-bottom: 1rem;
+  color: rgb(104, 103, 103);
+}
+
+
+/***RESPONSIVE***/
+
+@media screen and (max-width:1000px){
+  .navigation-bar ul li{
+    margin: 0 .8rem;
+  }
+
+  .box-text-section1{
+    padding: 0;
+  }
+
+  .box-img-section1 img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:850px){
+  .box-navigation-bar{
+    display: none;
+  }
+
+  .items-nav, .items-navigation{
+    display: block;
+  }
+
+  .items-nav ul li{
+    margin-bottom: 3rem;
+  }
+
+  .icon-menu{
+    display: block;
+  }
+
+  .nav-img-box img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .text-header{
+    font-size: 3.5rem;
+  }
+
+  .card-s2{
+    margin-bottom: 1.5rem!important;
+  }
+  
+}
